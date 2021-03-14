@@ -1,0 +1,46 @@
+.header {
+    padding: 50px 100px;
+    background-color: transparent;
+    display: flex;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    flex-basis: 50%;
+}
+
+.nav-main {
+    flex-basis: 50%;
+    &__list {
+        height: 80px;
+        @include list-null;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // &__item {
+
+    // }
+
+    &__link {
+        padding: 10px 20px;
+        font-size: 15px;
+        text-decoration: none;
+        color: var(--color-white);
+        transition: color .5s ease;
+
+        &--active {
+            color: var(--color-red);
+        }
+
+        &:hover {
+            color: var(--color-red);
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.worldclass {
+    position: relative;
+
+    &-inner {
+        max-width: 865px;
+        margin: 0 auto;
+        text-align: center;
+        &__title {
+            margin: 0 0 100px 0;
+            color: var(--color-white);
+            font-size: 36px; 
+            font-weight: 700;
+        }
+
+        &__text {
+            margin: 0;
+            font-size: 18px;
+            line-height: 37 / 18 * 100%;
+        }
+    }
+}

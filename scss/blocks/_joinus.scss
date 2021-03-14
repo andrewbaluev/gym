@@ -1,0 +1,31 @@
+.joinus {
+    padding: 65px 0;
+    background-image: url("../img/joinus-bg.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    &-inner {
+         display: flex;
+        &__content {
+           flex: 0 0 80%;
+         }
+        &__title {
+            font-size: 36px;
+            font-weight: 700;
+         }
+        &__text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 2;
+            color: var(--color-white);
+         }
+        &__btn {
+            display: flex;
+            align-items: center;
+            flex: 0 0 20%;
+        }
+     }
+}
+
+

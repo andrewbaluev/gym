@@ -1,0 +1,25 @@
+.signup {
+    padding: 100px 0;
+    background-color: var(--color-red);
+    display: flex;
+    justify-content: center;
+    &__link {
+        svg {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+            fill: var(--color-white);
+        }
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        font-size: 18px;
+        line-height: 2;
+        text-decoration: none;
+        color: var(--color-white);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

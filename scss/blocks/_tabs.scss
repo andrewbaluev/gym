@@ -1,0 +1,41 @@
+.tabs {
+    &__wrapper {
+        padding: 0 190px;
+    }
+    &-item {
+        margin-bottom: 50px;
+        &__list {            
+            display: flex;
+            text-align: center;
+            @include list-null;
+            li {
+                padding: 10px;
+                flex: 0 0 33.333%;
+                line-height: 2;
+                border: 1px solid var(--color-bg-light);
+                transition: background-color .3s ease;
+
+                cursor: pointer;
+                &:hover {
+                    background-color: var(--color-bg-light);
+                }
+            }
+            li.active {
+                background-color: var(--color-bg-light);
+            }
+        }
+
+        &__content {
+            display: none;
+            text-align: center;
+            font-size: 15px;
+            line-height: 2;
+            p {
+                margin: 0 0 15px;
+            }
+        }
+        &__content.active {
+            display: block;
+        }
+    }
+}
